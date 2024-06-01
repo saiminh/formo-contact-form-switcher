@@ -1,0 +1,24 @@
+.formo-contact-form-switcher-forms {
+  display: grid;
+}
+.formo-contact-form-switcher-forms > .formo-contact-form {
+  opacity: 0;
+  visibility: hidden;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+
+  &.shown {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.formo-contact-form-switcher-switch,
+.formo-contact-form-switcher-forms > .formo-contact-form input[type="text"],
+.formo-contact-form-switcher-forms > .formo-contact-form input[type="email"],
+.formo-contact-form-switcher-forms > .formo-contact-form textarea {
+  width: 100%;
+}
+.formo-contact-form .wpcf7-submit {
+  color: var(--wp--preset--color--white);
+  width: 100%;
+}
