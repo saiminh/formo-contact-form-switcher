@@ -9,12 +9,13 @@
 .formo-contact-form-switcher-forms {
   padding: 1em;
   background-color: #EEE;
+  overflow-x: scroll;
+  border: 1px solid var(--wp--preset--color--formo-blue);
   
   & > .block-editor-inner-blocks > .block-editor-block-list__layout{
     display: flex;
     gap: 1em;
     flex-wrap: nowrap;
-    overflow-x: scroll;
 
     & .formo-contact-form {
       flex: 0 0 90%;
